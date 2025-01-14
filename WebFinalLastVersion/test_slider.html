@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Slider de Memes Ajustado al Contenedor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="slider-wrapper" id="slider-wrapper">
+      <button class="slider-arrow left" onclick="prevSlide()" aria-label="Anterior">&#10094;</button>
+      <div class="slider" id="slider">
+        <img src="assets/memes/default_meme.jpg" alt="Portada memes">
+        <img src="assets/memes/meme1.jpeg" alt="Programadores con ChatGPT">
+        <img src="assets/memes/meme2.jpg" alt="Caitlyn vs Yasuo">
+        <img src="assets/memes/meme3.png" alt="Ser jugador de LoL">
+      </div>
+      <button class="slider-arrow right" onclick="nextSlide()" aria-label="Siguiente">&#10095;</button>
+      <div class="slider-nav" id="slider-nav">
+        <!-- Los botones se generarán dinámicamente -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+<div id="contenedor_principal">
+
+  <img id="flecha_izquierda" src="assets/icons/left_arrow.svg">
+
+      <div id="contenedor_memes">
+
+          <div id="slider">
+
+              <!-- Lista de memes -->
+
+              <img id="default_meme" src="assets/memes/default_meme.jpg" alt="Portada memes">
+              <img src="assets/memes/meme1.jpeg" alt="Programadores con chatgpt">
+              <img src="assets/memes/meme2.jpg" alt="Caitlyn vs yasuo">
+              <img src="assets/memes/meme3.png" alt="Ser jugador de lol">
+
+
+              <!-- 3 memes del lol, 3 de programadores, 2 de chill, 1 de bromita -->
+
+
+          </div>
+      
+          <div id="circulos">
+              
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+
+          </div>
+
+      </div>
+
+  <img id="flecha_derecha" src="assets/icons/right_arrow.svg">
+
+  </div>

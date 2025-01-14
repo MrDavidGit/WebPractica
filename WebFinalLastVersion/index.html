@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <title>Memes y trolleo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+
+    <!-- Banner (Cabeza de pagina) -->
+    <header>
+
+        <h1 id="bannerTitle">Memes & juego troll</h1>
+
+    </header>
+
+    <!-- Navegador a secciones -->
+    <nav>
+
+        <a id="a1" href="#Bienvenida">Bienvenida</a>
+        <a id="a2" href="#Memes">Memes</a>
+        <a id="a3" href="#JuegoTroll">Juego troll</a>
+        <a id="a4" href="#Fin">Fin</a>
+
+    </nav>
+
+    <!-- Sección 1 -->
+
+    <section id="Bienvenida">
+
+        <h2 id="firstTitle">¡Bienvenido a esta divertida pagina!</h2>
+        <img id="welcomeImage" src="assets/images/welcome_image.png" alt="Imagen de bienvenida">
+
+
+        <p>En esta pagina podras ver diversos memes divertidos de varios temas.</p>
+        <p>Tambien podras rellenar un formulario que sera un poco troll.</p>
+        <p>Y por ultimo, podras ver algunas explicaciones de como se hizo la pagina web, como su estructura y otros detalles internos.</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>gg</p>
+        <p>ggg</p>
+        <p>g</p>
+        <p>g</p>
+        <p>ggg</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+
+    </section>
+    <hr>
+    <!-- Sección 2 -->
+
+<!-- Sección 2 -->
+
+    <section id="Memes">
+        <h2>¡Memes!</h2>
+
+
+            <h2> ¡El nombre de cada meme saldra aqui!</h2>
+
+
+            <div id="contenedor_principal">
+
+            <img id="flecha_izquierda" src="assets/icons/left_arrow.svg" onclick="siguienteMeme()">
+
+                <div id="contenedor_memes">
+
+                    <div id="slider">
+
+                        <!-- Lista de memes -->
+
+                        <img id="default_meme" src="assets/memes/default_meme.jpg" alt="Portada memes">
+                        <img src="assets/memes/meme1.jpeg" alt="Programadores con chatgpt">
+                        <img src="assets/memes/meme2.jpg" alt="Caitlyn vs yasuo">
+                        <img src="assets/memes/meme3.png" alt="Ser jugador de lol">
+
+
+                        <!-- 3 memes del lol, 3 de programadores, 2 de chill, 1 de bromita -->
+
+         
+                    </div>
+                
+                    <div id="circulos">
+                        
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+
+                    </div>
+
+                </div>
+
+            <img id="flecha_derecha" src="assets/icons/right_arrow.svg" onclick="MemeAnterior()">
+
+            </div>
+    
+            <!--<div id="flecha_izquierda" class="estilo_contenedores_flechas"></div>-->
+
+            <!--<div id="flecha_derecha" class="estilo_contenedores_flechas"></div>-->
+
+            <!-- Pondre efecto de escritura cuando se pone el nombre del meme al cambiarse este -->
+
+
+        <p>fdf</p>
+        <p>f</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <i class="fa-solid fa-circle"></i>
+
+
+
+    </section>
+    <hr>
+
+
+
+    <!-- Sección 3 -->
+
+    <section id="JuegoTroll">
+
+        <h2>¡Juego troll!</h2>
+
+        <fieldset>
+            
+            <legend>Formulario troll</legend>
+
+            <label for="palabra">Escribe la palabra que quieras...</label>
+            <input type="text" name="palabra" min="5" max="15" required>
+            
+            <label for="contraseña">Escribe lacontraseña</label>
+            <input type="password" name="contraseña" min="12" required>
+
+            <!-- Input que solo acepta videos -->
+            <label for="loadVideo">Sube un video:</label>
+            <input type="file" name="loadVideo" accept="video/*">
+
+            <label for="selection">Si un tren va atropellar a alguien y tienes que hacer algo, ¿Que elijes?</label>
+
+            <select name="selection" id="selection">
+
+                <option value="s1">Desviar el tren y atropellar a 4 desconocidos</option>
+                <option value="s2">No hacer nada y que el tren atropelle a 4 conocidos</option>
+                <option value="s3">Saltar frente al tren y detenerlo</option>
+                <option value="s4" selected>Intentar detener el tren aunque pueda fallar y atropelle a todos</option>
+
+            </select>
+
+            <label for="checkbox">Selección:</label>
+            <input type="checkbox" id="checkbox" name="checkbox" >
+
+
+            <button type="submit">¡Clickeame!</button>
+
+            <!-- Un checkbox de seleccion obligatoria -->
+            <!-- Un radio con 3 opciones al menos -->
+            <!-- Un textarea con tamaño de filas y columnas y que sea mas ancho que alto -->
+            <!-- Con id, name, placeholders y labels -->
+
+
+        </fieldset>
+
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>gg</p>
+        <p>ggg</p>
+        <p>g</p>
+        <p>g</p>
+        <p>ggg</p>
+        <p>g</p>
+        <p>g</p>
+
+    </section>
+    <hr>
+
+    <!-- Sección 4 -->
+
+    <section id="Fin">
+
+        <h2>¡Fin!</h2>
+
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>g</p>
+        <p>gg</p>
+        <p>ggg</p>
+        <p>g</p>
+        <p>g</p>
+        <p>ggg</p>
+
+    </section>
+    <hr>
+
+
+    <!-- Pie de pagina -->
+    <footer>
+
+        <h6>Hecho por David </h6>
+        <h6>Correo: davidwebdesigner@gmail.com</h6>
+<!-- Meter icono de correo -->
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+<!-- Segui un diseño progresivo en el que conforme avanzaba la estructura de la base le ponia el estilo con css -->
+<!-- Tipo de diseño esquema y metodo de trabajo que segui -->
+<!-- No es responsive design y no hice maquetacion avanzada -->
+<!-- Dados los requerimientos de la web hice un diseño de secciones con banner y footer con animaciones y diseño bastante fluido ademas de seguir una paleta de colores de tal herramienta y usada x pagina para sacar los iconos svg porque escalan y pesan poco y son rapidos de cargar -->
+<!-- Se comento lo importante para no perderse al leer esto -->
+<!-- Metere iconos y animaciones donde quede bien y repasare los colores -->
+<!-- Poner fondos de imagenes con patrones a las cosas, a los fondos, quizas sea mejor que poner colores -->
+
+<!-- Poner el banner con los navs que segun la seccion que estes este como mas ocultado -->

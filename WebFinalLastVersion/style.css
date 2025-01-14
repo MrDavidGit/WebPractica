@@ -1,0 +1,358 @@
+/* Variables de todo el documento css */
+:root {
+
+    --banner-height: 80px; /* Ajusta la altura del banner aquí */
+    --border-radius: 15px;
+
+}
+
+html {
+    margin: 0;
+}
+
+body {
+
+    margin: 0;
+
+    /* Hace espacio en blanco desde arriba en el body para mover los elementos y no solapar el header */
+
+    /* Ver si lo pongo */
+    /* background-image: url("assets/backgrounds/repeated-square.jpg"); /* Imagen del patrón */ 
+   /*background-size: repeat; /* Para que se repita y cubra toda la página */ 
+
+   /* display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; */
+   margin-top: var(--banner-height); /* Hace espacio en el body para no solapar el header */
+
+   font-family: 'Roboto', sans-serif;
+
+
+}
+
+/* Hace que la barra de scroll desaparezca con la opcion avanzada del navegador llamada webkit*/
+
+body::-webkit-scrollbar {
+
+    display: none;
+
+}
+  
+#welcomeImage {
+
+    width: 650px;
+    height: 650px;
+    
+    border: 1px black solid;
+    border-radius: var(--border-radius);
+
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    
+}
+
+
+
+
+
+
+h1, h6, hr {
+
+    margin: 0;
+
+}
+
+#firstTitle {
+
+    margin: 20px;
+
+}
+
+
+
+header {
+
+    position: fixed;
+
+    margin: 0;
+    padding: 0;
+    height: var(--banner-height);
+    width: 100%;
+
+    background-image: url('assets/backgrounds/banner_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* background: linear-gradient(to right, #E0E0E0, #C0C0C0); /* Degradado gris en el header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #1f8600; /* Color del texto en el header */
+    /* Añadir borde negro al texto */
+
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    border-bottom: 1px black solid;
+    font-family: 'Roboto', sans-serif;
+
+    transition: height 0.4s ease-in-out; /* Cambia la altura suavemente en 0.3 segundos */
+
+}
+
+
+
+nav {
+
+   position: fixed;
+
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   /* Cantidad de espacio entre los elementos del menu */
+   gap: 50px;
+
+   
+
+    /* Sigue estando como fixed con el header pero se salta el posicionamiento del header */
+    top: 0;
+    left: 0;
+    margin-top: var(--banner-height);
+    z-index: 0;
+    color: black; /* Color del texto en la navegación */
+
+
+
+}
+
+
+
+/* Enlaces */
+a {
+
+    position: relative;
+
+    padding: 10px;
+    text-decoration: none;
+    background-color: #909090;
+    border: 1px #111111 solid;
+    border-radius: 5px;
+
+
+}
+
+a:hover {
+
+    background-color: #DCEFE4;
+
+}
+
+a:visited {
+    color: black; /* Color para los enlaces visitados */
+}
+
+.scroll_activo a {
+
+    bottom: 52px;
+
+}
+
+/* Hover habilitado solo si el nav tiene scroll_activo */
+nav.scroll_activo a:hover {
+    /* transform: translateY(121px); /* Movimiento adicional */
+    /* Funciona igual sin eso, quitarlo */
+    background-color: #DCEFE4;
+}
+
+
+
+
+#Bienvenida {
+    margin-top: 20px;
+}
+
+footer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #909090; /* Fondo gris oscuro en el footer */
+    color: black;
+    border-top: 1px black solid;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 65px;
+
+}
+
+/* Contenedores seccion de memes */
+
+#contenedor_principal {
+
+    display: flex;
+    justify-content: center;
+
+    /* No es mejor centrarlo con space-beetwen los 3 elementos y mas exactos asi? */
+    align-items: center;
+    flex-direction: row;
+
+}
+
+#contenedor_memes {
+
+    width: 800px;
+    height: 600px;
+
+    border-radius: 10px;
+
+    border: 1px black solid;
+    border-radius: 10px;
+
+    /* Lo que se salga del contenedor no se vera */
+    overflow: hidden;
+    
+}
+
+.fa-solid.fa-circle {
+
+color: rgb(243, 243, 69);
+margin: 5px;
+
+}
+
+#slider {
+
+    transition: transform 0.5s ease-in-out; /* Animación suave para el desplazamiento */
+
+}
+
+#circulos {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#flecha_izquierda {
+
+    width: 300px;
+    /* Se pone en automatico para que la proporcion de altura la pille automaticamente y proporcionalmente en base al ancho */
+    height: auto;
+
+    margin-right: 100px;
+
+    filter: drop-shadow(-2px 5px 6px rgba(120, 120, 120, 0.8));
+    transition: transform 0.3s ease;
+
+}
+
+#flecha_derecha {
+
+    width: 300px;
+    height: auto;
+    margin-left: 100px;
+    
+    /* Filtro directo al svg porque si se pone directo el efecto de shadow lo hace mal */
+    filter: drop-shadow(2px 5px 6px rgba(120, 120, 120, 0.8));
+    transition: transform 0.3s ease;
+
+}
+
+/* Animación infinita de las flechas al tener el raton encima */
+#flecha_izquierda:hover, #flecha_derecha:hover {
+    animation: subirBajar 0.6s ease-in-out infinite;
+}
+
+.deslizar_izquierda {
+    animation: deslizarIzquierda 0.5s easy forwards;
+}
+
+.deslizar_derecha {
+    animation: deslizarDerecha 0.5s easy forwards;
+}
+
+/* Definimos la animación */
+@keyframes subirBajar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes deslizarIzquierda {
+
+    0% { transform: translateX(0) }
+    100% { transform: translateX(-100%) }
+    
+}
+
+@keyframes deslizarDerecha {
+
+    0% { transform: translateX(0) }
+    100% { transform: translateX(100%) }
+    
+}
+
+/*--------------------------------------------------------- */
+
+#Bienvenida {
+    background: linear-gradient(to bottom, #F0FFF1, #F0FFF1 50%, #F0FFF1);
+  }
+  
+  #Memes {
+    background: linear-gradient(to bottom, #DCEFE4, #DCEFE4 50%, #DCEFE4);
+  }
+  
+  #JuegoTroll {
+    background: linear-gradient(to bottom, #F0FFF1, #F0FFF1 50%, #F0FFF1);
+  }
+  
+  #Fin {
+    background: linear-gradient(to bottom, #DCEFE4, #DCEFE4 50%, #DCEFE4);
+  }
+  
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Poner comentarios a lo importante */
+
+/* Explicar organización de capas de los elementos */
+
+/* Añadir pantalla de carga de efecto guapo en pantalla? */
+
+/* Herramientas usadas como google fonts y explicar en general y las cosas raras */
+
+/* Añadir sombras a bordes y eso? Sobre todo entre las secciones arriba y abajo de estas de colores para que se queden mas.. bonitas */
+/* La web seguira un estilo de cosas como margenes general para cuadrar */
+/* Añadir soniditos */
+/* Que al pasar el cursor por algunos lados no salga el tipico */
+/* Cambiar el cursor que sale en la pagina y segun la seccion que estes */
+
+
+/* Añadir iconos bonitos en los elementos, como en el banner */
+
+/* Poner imagen de tree en la web en la explicación final */
+
+/* Quiero que salga el nombre del meme en pequeño en algun lado al ver los memes */
